@@ -10,8 +10,8 @@ jobs:
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: cluster0.ddfdsa.mongodb.net
-      MONGODB_USERNAME: tbadawy
-      MONGODB_PASSWORD: 12345password
+      MONGODB_USERNAME: tbadawy   #### can be sotred in github secrets {{ secrets.MONGODB_USERNAME}}
+      MONGODB_PASSWORD: 12345password ## same syntax as above
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
